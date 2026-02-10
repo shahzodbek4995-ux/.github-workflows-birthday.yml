@@ -1,3 +1,5 @@
+name: Birthday Bot
+
 on:
   schedule:
     - cron: "0 3 * * *"   # UTC 03:00 → Toshkent 08:00
