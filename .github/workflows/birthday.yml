@@ -1,8 +1,6 @@
-name: Birthday Bot
-
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 3 * * *"   # UTC 03:00 → Toshkent 08:00
   workflow_dispatch:
 
 jobs:
@@ -18,4 +16,4 @@ jobs:
 
       - run: pip install pandas python-telegram-bot
 
-      - run: python bot.py
+      - run: python $GITHUB_WORKSPACE/bot.py
